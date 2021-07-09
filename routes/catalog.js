@@ -74,4 +74,8 @@ router.get('/bookinstance/:id', book_instance_controller.bookinstance_detail);
 
 router.get('/bookinstances', book_instance_controller.bookinstance_list);
 
+router.get('/genre/create', genre_controller.genre_create_get);
+
+router.post('/genre/create', genre_controller.genre_create_post);
+
 module.exports = router;
